@@ -1,0 +1,61 @@
+/* Set theme colors */
+:root {
+  --theme-gray: #f8f8ff;
+  --theme-light: #8ca698;
+  --theme-dark: #5e776a;
+}
+
+/* Define the gray colors */
+.gray {
+  background-color: var(--theme-gray);
+}
+
+/* Set background */
+.bg {
+  background-image: url("resources/background.jpg");
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Center background image */
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Define the button */
+.btn {
+  background-color: var(--theme-light);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Darker button background on mouse-over */
+.btn:hover {
+  background-color: var(--theme-dark);
+  color: var(--theme-gray);
+}
+
+/* Set navbar brand color */
+navbar-brand {
+  color: var(--theme-gray);
+}
+
+/* Make nav link a little brighter */
+.nv_link {
+  color: rgba(255,255,255,.64) !important;
+}
+
+/* Lighter nav link on mouse-over */
+.nv_link:hover {
+  color: var(--theme-gray) !important;
+}

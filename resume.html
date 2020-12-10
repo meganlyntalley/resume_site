@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scripts -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Resume</title>
+
+    <style>
+/* Section title */
+.section-title {
+    color: var(--theme-gray);
+}
+
+/* Card body */
+.card-body {
+    background-color: var(--theme-gray);
+}
+
+/* Skills list */
+.skills-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/* Skills card border */
+.card {
+    border: 2px solid var(--theme-gray);
+}
+
+/* Job title */
+.job-title {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Company name */
+.company {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Year */
+.year {
+    margin-top: 10px;
+}
+
+/* Job description */
+.job-description {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Timeline configuration */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: var(--theme-gray);
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    margin-left: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--theme-gray);
+    border-radius: 6px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: var(--theme-gray);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid var(--theme-light);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="bg">
+    <div class="container-fluid vertical-center">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: var(--theme-light)">
+            <a href="index.html" class="navbar-brand">Megan Lyn Talley</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a id="index" href="index.html" class="nav-item nav-link nv_link">About Me</a>
+                    <a id="resume" href="resume.html" class="nav-item nav-link active">Resume</a>
+                </div>
+            </div>
+        </nav>
+        <!-- End navbar -->
+
+        <!-- Main content -->
+        <div class="col-12 col-md-8 offset-md-2" style="padding-top: 85px;">
+
+            <!-- Technologies heading -->
+            <div class="row align-items-center">
+                <div class="col">
+                    <h3 class="section-title">Technologies</h3>
+                </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3" style="padding-top: 10px;">
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Containers and Orchestration</h5>
+                            <ul class="card-text skills-list">
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>SaltStack</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">CI/CD</h5>
+                            <ul class="card-text skills-list">
+                                <li>Bamboo</li>
+                                <li>Octopus Deploy</li>
+                                <li>Helm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Build Management</h5>
+                            <ul class="card-text skills-list">
+                                <li>Maven</li>
+                                <li>npm</li>
+                                <li>Artifactory</li>
+                                <li>SonarQube</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Source Control</h5>
+                            <ul class="card-text skills-list">
+                                <li>Git</li>
+                                <li>Bitbucket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Languages</h5>
+                            <ul class="card-text skills-list">
+                                <li>Java</li>
+                                <li>Bash</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtualization</h5>
+                            <ul class="card-text skills-list">
+                                <li>VMware</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End technologies -->
+
+            <!-- Experience -->
+            <div class="row" style="padding-top: 15px">
+                <div class="col">
+                    <h3 class="section-title">Experience</h3>
+                    <ul class="timeline">
+                        <!-- Exostar -->
+                        <li>
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="job-title">Release and DevOps Engineer</h6>
+                                    <p class="company">Exostar</p>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <h6 class="year">2016-Present</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col job-description">
+                                    <p>As a Release and DevOps Engineer at Exostar, I am responsible for architecting,
+                                        building, and maintaining our Bamboo CI/CD pipeline for our IAM platforms.
+                                        I work closely with the development team to identify and resolve build and
+                                        deployment errors, and participate in prototyping, developing, and deploying
+                                        Exostar&#8217;s Kubernetes-based platform.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- UMass -->
+                        <li>
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="job-title">Research and Teaching Assistant</h6>
+                                    <p class="company">University of Massachusetts at Amherst</p>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <h6 class="year">2013-2015</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col job-description">
+                                    <p>As a teaching and research assistant at the University of Massachusetts,
+                                        I researched and taught complex scientific principles to a diverse audience.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End experience -->
+
+            <!-- Education -->
+            <div class="row" style="padding-top: 30px;">
+                <div class="col">
+                    <h3 class="section-title">Education</h3>
+                    <ul class="timeline">
+                        <li>
+                            <div class="row">
+                                <div class="col" style="padding-bottom: 10px;">
+                                    <h6 class="job-title">Master of Science / Physics</h6>
+                                    <p class="company">University of Massachusetts at Amherst<br>Amherst, MA</p>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <h6 class="year">2013-2015</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col" style="padding-bottom: 10px;">
+                                    <h6 class="job-title">Bachelor of Science / Applied Physics</h6>
+                                    <p class="company">Christopher Newport University<br>Newport News, VA</p>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <h6 class="year">2009-2013</h6>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End education -->
+
+            <!-- Download resume -->
+            <div class="row align-items-center" style="padding-top: 40px; padding-bottom: 70px;">
+                <div class="col" style="text-align:center">
+                    <a href="resources/MeganTalley_Resume.pdf">
+                        <button class="btn">DOWNLOAD RESUME</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End download resume -->
+
+        <!-- End main content -->
+
+    </div>
+</div>
+</body>
+</html>
